@@ -1,5 +1,5 @@
-export { Application, Router } from 'https://deno.land/x/oak@v10.1.0/mod.ts'
-export { Session } from 'https://deno.land/x/oak_sessions@v3.2.3/mod.ts'
+export { Application, Router } from 'https://deno.land/x/oak@v12.1.0/mod.ts'
+export { default as Session } from 'https://deno.land/x/oak_sessions@v4.1.0/src/Session.ts'
 export { JsonRpcProvider } from 'https://esm.sh/@ethersproject/providers'
 
 import siwe from 'https://esm.sh/siwe'

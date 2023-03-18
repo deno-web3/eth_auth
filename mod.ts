@@ -2,10 +2,9 @@ import { Application, Session, Router, generateNonce, SiweMessage, ErrorTypes, J
 
 const PORT = 3000
 const app = new Application()
-const session = new Session()
 const router = new Router<{ session: Session }>()
 
-app.use(session.initMiddleware())
+app.use(Session.initMiddleware())
 
 router.get('/api/nonce', async (ctx) => {
   await ctx.state.session.set('nonce', generateNonce())
